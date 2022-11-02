@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grab The Cheese</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat&display=swap" rel="stylesheet">
+    <script>
+      //as we are using seperate files we are defining the game mode here 
+      let gameMode = 'singlePlayer'
+    </script>
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cheese-grid grid-user"></div>
+      <div class="cheese-grid grid-computer"></div>
+    </div>
+
+    <div class="container hidden-info">
+      <div class="setup-buttons" id="setup-buttons">
+        <button id="start" class="btn">Start Game</button>
+      </div>
+      <h3 id="whose-go" class="info-text">Your Go</h3>
+      <h3 id="info" class="info-text"></h3>
+    </div>
+
+    <div class="container">
+      <div class="grid-display">
+        <div class="cube" draggable="true"><div id="mozzarella"></div></div>
+        <div class="cube" draggable="true"><div id="cheddar"></div></div>
+        <div class="cube" draggable="true"><div id="gouda"></div></div>
+        <div class="cube" draggable="true"><div id="feta"></div></div>
+        <div class="cube" draggable="true"><div id="parmesan"></div></div>
+      </div>
+    </div>
+  </body>
+</html>

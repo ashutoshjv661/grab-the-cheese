@@ -1,0 +1,17 @@
+{
+  "name": "grabcheese",
+  "version": "1.0.0",
+  "description": "Multiplayer Grab Cheese game",
+  "main": "app.js",
+  "scripts": {
+    "start":"node server",
+    "dev": "nodemon server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.3"
+  }
+}

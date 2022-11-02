@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  background-color: #ffedae;
+  overflow-x: hidden;
+  /*horizontal overflow is hidden */
+}
+
+/*::before inserts items before every element and after every element*/
+*, *::before, *::after {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+/*---------------Splash Screen -------------*/
+/*The splash screen title and single and mutliPlayer anchor tags*/
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 66vh;
+}
+/*Splash screen */
+.splash-title {
+  font-family: 'Indie Flower', cursive;
+  font-size: 10rem;
+}
+/*Splash image */
+.splash-image {
+  position: absolute;
+  width: 100%;
+  bottom: 1vh;
+  pointer-events: none; /*Cannot click on it */
+  opacity: .50;
+  z-index: -1;
+}
+
+.btn {
+  font-size: inherit;
+  background-color: hsl(30, 100%, 50%);
+  padding: .5em 1em;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: .2em;
+  color: #333;
+}
+
+.btn:hover, .btn:focus {
+  border: 1px solid rgb(32, 26, 26);
+  background-color: hsl(64, 88%, 56%);
+}
+
+.splash-btn {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+/*removing margin from the left button */
+.splash-btn:first-child {
+  margin-left: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cheese-grid {
+  margin: 2vmin;
+  display: grid;
+  background-color: hsl(141, 81%, 51%);
+  grid-template-rows: repeat(5, 9.2vmin);
+  grid-template-columns: repeat(5, 9.2vmin);
+}
+
+.grid-computer > .taken, .grid-computer > .boom {
+  background-color: hsl(141, 81%, 51%) !important;
+  border-radius: 0 !important;
+}
+
+.taken,.cube {
+  position: relative;
+  border: 0.5px solid black;
+  background-color: hsl(60, 92%, 51%);
+}
+
+.grid-display {
+  display: flex;
+}
+
+.cube > div {
+  width: 9.2vmin;
+  height: 9.2vmin;
+}
+
+.cube {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vmin;
+  width: 9.2vmin;
+  height: 9.2vmin;
+  border-radius: 1.3vmin;
+}
+
+.cheese-grid div {
+  border: 1px solid hsla(0, 0%, 100%, .2);
+}
+
+.hidden-info {
+  font-size: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info-text {
+  margin: 1rem;
+}
+
+.miss,.boom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boom::after, .miss::after {
+  content: '';
+  position: absolute;
+  border-radius: 100%;
+  width: 4vmin;
+  height: 4vmin;
+}
+
+.miss::after {
+  background-color: white;
+}
+
+.boom::after {
+  background-color: red;
+}
+
+.miss::before {
+  content: '';
+  position: absolute;
+  border: 1vmin solid white;
+  border-radius: 100%;
+  width: 4vmin;
+  height: 4vmin;
+}
+
+.player {
+  margin: 2vmin;
+}
+
+.connected, .ready {
+  font-weight: normal;
+  opacity: .25;
+  text-decoration: line-through;
+}
+
+.connected.active , .ready.active {
+  opacity: 1;
+  text-decoration: none;
+}

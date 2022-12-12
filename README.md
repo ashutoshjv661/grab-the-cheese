@@ -13,6 +13,11 @@ For development, you will need
 3. Express
 4. socket.io 
 
+## Screenshots
+<img width="80%" alt="grabTheCheese" src="https://user-images.githubusercontent.com/31470393/199402898-27d8a21b-7062-44c9-a6a3-9fc53e1f4ee4.png">
+<img width="80%" alt="singlePlayer" src="https://user-images.githubusercontent.com/31470393/199402925-4ea838be-7367-4ddf-9a7d-ed964e456e22.png">
+
+
 ### Node
 - #### Node installation on Windows
 
@@ -52,8 +57,3 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Running the project 🚀
 
     $ npm run dev
-
-## Screenshots
-<img width="80%" alt="grabTheCheese" src="https://user-images.githubusercontent.com/31470393/199402898-27d8a21b-7062-44c9-a6a3-9fc53e1f4ee4.png">
-<img width="80%" alt="singlePlayer" src="https://user-images.githubusercontent.com/31470393/199402925-4ea838be-7367-4ddf-9a7d-ed964e456e22.png">
-
